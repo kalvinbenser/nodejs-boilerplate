@@ -16,6 +16,15 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/runtime 
 
 ```
 
+#### add scripts in your package.json
+
+```
+"build": "babel ./src --out-dir ./build",
+"prod": "npm run build && node build/index.js",
+"start": "nodemon --exec babel-node src/index.js",
+
+```
+
 ## node prettier setup
 
 ```
@@ -35,21 +44,13 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/runtime 
 
 ```
 
-#### add scripts in your package.json
-
-```
- "build": "babel ./src --out-dir ./build",
- "prod": "npm run build && node dist/index.js",
- "start": "nodemon --exec babel-node src/index.js",
-
-```
-
 ## eslint setup
 
 ```
  npm install eslint --save-dev
 
  npx eslint --init
+
 ```
 
 #### add scripts npx eslint . in your package.json
