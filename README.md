@@ -1,6 +1,9 @@
 ## node babel setup
 
-#### npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/runtime --save-dev
+```
+npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/runtime --save-dev
+
+```
 
 #### create .babelrc file and add below code for config
 
@@ -15,7 +18,10 @@
 
 ## node prettier setup
 
-#### npm install prettier --save-dev
+```
+ npm install prettier --save-dev
+
+```
 
 #### create .prettierrc file in your product root folder and add below code in your .prettierrc file
 
@@ -40,9 +46,11 @@
 
 ## eslint setup
 
-#### npm install eslint --save-dev
+```
+ npm install eslint --save-dev
 
-#### npx eslint --init
+ npx eslint --init
+```
 
 #### add scripts npx eslint . in your package.json
 
